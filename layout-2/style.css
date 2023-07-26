@@ -14,6 +14,8 @@ section.top{
     border:2px solid black;
 }
 
+
+
 section#left{
     height:300px;
     width:40%;
@@ -27,4 +29,51 @@ section#right{
     width:60%;
     border:2px solid black;
     float:right;
+}
+
+@media (max-width:480px){
+    section.top{
+        background-color: green;
+    }
+    section#left{
+        width:100%;
+        background-color:yellow;
+    }
+    section#right{
+        width:100%;
+        background-color: aqua;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    section.top{
+        background-color: green;
+    }
+    section#left{
+        width:50%;
+        background-color:yellowgreen;
+    }
+    section#right{
+        width:50%;
+        background-color: darkgreen;
+    }
+}
+@media (min-width:769px){
+    section.top{
+        background-color: green;
+        width:33.333%;
+        float:left;
+    }
+    section#left{
+        width:33.333%;
+        background-color:yellowgreen;
+        float:left;
+        height:200px;
+    }
+    section#right{
+        width:33.333%;
+        background-color: darkgreen;
+        float:right;
+        height:200px;
+    }
 }

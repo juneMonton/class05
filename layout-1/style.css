@@ -9,17 +9,34 @@ header,footer{
 
 }
 
+
 section.top{
     height: 300px;
-    width:33.33%;
+    width:33.333%;
     border:3px solid black;
     float:left;
-
 }
+@media screen and (max-width:480px){
+    section.top{
+        width:100%;
+    }
+}
+@media screen and (min-width:481px){
+    section.top{
+        background-color:greenyellow;
+    }
+}
+
 
 section.bot{
     height: 400px;
     width:50%;
     border:3px solid black;
     float:left;
+}
+
+@media screen and (max-width:480px){
+    section.bot{
+        display:none;
+    }
 }

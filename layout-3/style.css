@@ -29,3 +29,54 @@ section.three{
 
 
 }
+
+@media (max-width:480px){
+    header,footer{
+        background-color: yellow;
+    }
+    section.one{
+        width:100%;
+        background-color: blue;
+    }
+    section.two{
+        width:100%;
+        background-color: aqua;
+    }
+    section.three{
+        width:100%;
+        background-color:aquamarine;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    header,footer{
+        background-color: aquamarine;
+    }
+    section.one{
+        width:25%;
+        background-color: green;
+    }
+    section.two{
+        width:25%;
+        background-color: yellowgreen;
+    }
+    section.three{
+        width:25%;
+        background-color:green;
+    }
+}
+
+@media (min-width:769px){
+   
+    section.one{
+               background-color: yellow;
+    }
+    section.two{
+       
+        background-color: blue;
+    }
+    section.three{
+       
+        background-color:red;
+    }
+}
